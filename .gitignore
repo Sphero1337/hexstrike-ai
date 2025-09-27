@@ -1,2 +1,9 @@
 *.log
 *.state
+.venv/
+__pycache__/
+*.pyc
+instance/
+.env
+.DS_Store
+reports/

@@ -82,3 +82,10 @@ bcrypt==4.0.1                   # Pin bcrypt version for passlib compatibility (
 # 5. Browser Agent requires Chrome/Chromium and ChromeDriver installation
 #
 # For complete installation instructions and setup guides, see README.md
+
+# ============================================================================
+# My own Python packages (for development purposes)
+setuptools      # For building and distributing packages
+requests_ntlm     # NTLM authentication support for requests
+defusedxml
+colorama

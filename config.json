@@ -133,9 +133,12 @@
                 }
             }
         },
-        "binary_analysis": {
-            "enabled": false,
+        "utility": {
+            "enabled": true,
             "tools": {
+                "install_python_package": {
+                    "enabled": true
+                },
                 "create_file": {
                     "enabled": true
                 },
@@ -151,12 +154,14 @@
                 "generate_payload": {
                     "enabled": true
                 },
-                "install_python_package": {
-                    "enabled": true
-                },
                 "execute_python_script": {
                     "enabled": true
-                },
+                }
+            }
+        },
+        "binary_analysis": {
+            "enabled": false,
+            "tools": {
                 "gdb_analyze": {
                     "enabled": true
                 },
