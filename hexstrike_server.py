@@ -4752,7 +4752,7 @@ class ParameterOptimizer:
             base_params.update({
                 "mode": "dir",
                 "threads": 20,
-                "wordlist": "./wordlists/dirbuster/directory-list-2.3-medium.txt"
+                "wordlist": "/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt"
             })
         elif tool == "sqlmap":
             base_params.update({

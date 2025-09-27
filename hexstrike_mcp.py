@@ -1044,7 +1044,7 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
     # ============================================================================
 
     @conditional_tool
-    def dirb_scan(url: str, wordlist: str = "/usr/share/wordlists/dirb/common.txt", additional_args: str = "") -> Dict[str, Any]:
+    def dirb_scan(url: str, wordlist: str = "/usr/share/wordlists/seclists/Discovery/Web-Content/common.txt", additional_args: str = "") -> Dict[str, Any]:
         """
         Execute Dirb for directory brute forcing with enhanced logging.
 
@@ -1267,7 +1267,7 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
         return result
 
     @conditional_tool
-    def ffuf_scan(url: str, wordlist: str = "/usr/share/wordlists/dirb/common.txt", mode: str = "directory", match_codes: str = "200,204,301,302,307,401,403", additional_args: str = "") -> Dict[str, Any]:
+    def ffuf_scan(url: str, wordlist: str = "/usr/share/wordlists/seclists/Discovery/Web-Content/common.txt", mode: str = "directory", match_codes: str = "200,204,301,302,307,401,403", additional_args: str = "") -> Dict[str, Any]:
         """
         Execute FFuf for web fuzzing with enhanced logging.
 
@@ -2308,7 +2308,7 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
         return result
 
     @conditional_tool
-    def feroxbuster_scan(url: str, wordlist: str = "/usr/share/wordlists/dirb/common.txt", threads: int = 10, additional_args: str = "") -> Dict[str, Any]:
+    def feroxbuster_scan(url: str, wordlist: str = "/usr/share/wordlists/seclists/Discovery/Web-Content/common.txt", threads: int = 10, additional_args: str = "") -> Dict[str, Any]:
         """
         Execute Feroxbuster for recursive content discovery with enhanced logging.
 
@@ -2388,7 +2388,7 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
         return result
 
     @conditional_tool
-    def wfuzz_scan(url: str, wordlist: str = "/usr/share/wordlists/dirb/common.txt", additional_args: str = "") -> Dict[str, Any]:
+    def wfuzz_scan(url: str, wordlist: str = "/usr/share/wordlists/seclists/Discovery/Web-Content/common.txt", additional_args: str = "") -> Dict[str, Any]:
         """
         Execute Wfuzz for web application fuzzing with enhanced logging.
 
@@ -2419,7 +2419,7 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
 
     @conditional_tool
     def dirsearch_scan(url: str, extensions: str = "php,html,js,txt,xml,json",
-                      wordlist: str = "/usr/share/wordlists/dirsearch/common.txt",
+                      wordlist: str = "/usr/share/wordlists/seclists/Discovery/Web-Content/common.txt",
                       threads: int = 30, recursive: bool = False, additional_args: str = "") -> Dict[str, Any]:
         """
         Execute Dirsearch for advanced directory and file discovery with enhanced logging.
@@ -2984,7 +2984,7 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
     # ============================================================================
 
     @conditional_tool
-    def api_fuzzer(base_url: str, endpoints: str = "", methods: str = "GET,POST,PUT,DELETE", wordlist: str = "/usr/share/wordlists/api/api-endpoints.txt") -> Dict[str, Any]:
+    def api_fuzzer(base_url: str, endpoints: str = "", methods: str = "GET,POST,PUT,DELETE", wordlist: str = "/usr/share/wordlists/seclists/Discovery/Web-Content/burp-parameter-names.txt") -> Dict[str, Any]:
         """
         Advanced API endpoint fuzzing with intelligent parameter discovery.
 
