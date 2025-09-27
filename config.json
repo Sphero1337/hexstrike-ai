@@ -1,0 +1,313 @@
+{
+    "tool_categories": {
+        "network_penetration_testing": {
+            "enabled": true,
+            "tools": {
+                "nmap_scan": {
+                    "enabled": true
+                },
+                "gobuster_scan": {
+                    "enabled": true
+                },
+                "nuclei_scan": {
+                    "enabled": true
+                },
+                "dirb_scan": {
+                    "enabled": true
+                },
+                "nikto_scan": {
+                    "enabled": true
+                },
+                "sqlmap_scan": {
+                    "enabled": true
+                },
+                "metasploit_run": {
+                    "enabled": true
+                },
+                "hydra_attack": {
+                    "enabled": true
+                },
+                "john_crack": {
+                    "enabled": true
+                },
+                "wpscan_analyze": {
+                    "enabled": true
+                },
+                "enum4linux_scan": {
+                    "enabled": true
+                },
+                "ffuf_scan": {
+                    "enabled": true
+                },
+                "netexec_scan": {
+                    "enabled": true
+                },
+                "amass_scan": {
+                    "enabled": true
+                },
+                "hashcat_crack": {
+                    "enabled": true
+                },
+                "subfinder_scan": {
+                    "enabled": true
+                },
+                "smbmap_scan": {
+                    "enabled": true
+                },
+                "rustscan_fast_scan": {
+                    "enabled": true
+                },
+                "masscan_high_speed": {
+                    "enabled": true
+                },
+                "nmap_advanced_scan": {
+                    "enabled": true
+                },
+                "autorecon_comprehensive": {
+                    "enabled": true
+                },
+                "enum4linux_ng_advanced": {
+                    "enabled": true
+                },
+                "rpcclient_enumeration": {
+                    "enabled": true
+                },
+                "nbtscan_netbios": {
+                    "enabled": true
+                },
+                "arp_scan_discovery": {
+                    "enabled": true
+                },
+                "responder_credential_harvest": {
+                    "enabled": true
+                },
+                "msfvenom_generate": {
+                    "enabled": true
+                },
+                "fierce": {
+                    "enabled": true
+                },
+                "dnsenum": {
+                    "enabled": true
+                }
+            }
+        },
+        "cloud_security": {
+            "enabled": false,
+            "tools": {
+                "prowler_scan": {
+                    "enabled": true
+                },
+                "trivy_scan": {
+                    "enabled": true
+                },
+                "scout_suite_assessment": {
+                    "enabled": true
+                },
+                "cloudmapper_analysis": {
+                    "enabled": true
+                },
+                "pacu_exploitation": {
+                    "enabled": true
+                },
+                "kube_hunter_scan": {
+                    "enabled": true
+                },
+                "kube_bench_cis": {
+                    "enabled": true
+                },
+                "docker_bench_security_scan": {
+                    "enabled": true
+                },
+                "clair_vulnerability_scan": {
+                    "enabled": true
+                },
+                "falco_runtime_monitoring": {
+                    "enabled": true
+                },
+                "checkov_iac_scan": {
+                    "enabled": true
+                },
+                "terrascan_iac_scan": {
+                    "enabled": true
+                }
+            }
+        },
+        "binary_analysis": {
+            "enabled": false,
+            "tools": {
+                "create_file": {
+                    "enabled": true
+                },
+                "modify_file": {
+                    "enabled": true
+                },
+                "delete_file": {
+                    "enabled": true
+                },
+                "list_files": {
+                    "enabled": true
+                },
+                "generate_payload": {
+                    "enabled": true
+                },
+                "install_python_package": {
+                    "enabled": true
+                },
+                "execute_python_script": {
+                    "enabled": true
+                },
+                "gdb_analyze": {
+                    "enabled": true
+                },
+                "radare2_analyze": {
+                    "enabled": true
+                },
+                "binwalk_analyze": {
+                    "enabled": true
+                },
+                "ropgadget_search": {
+                    "enabled": true
+                },
+                "checksec_analyze": {
+                    "enabled": true
+                },
+                "xxd_hexdump": {
+                    "enabled": true
+                },
+                "strings_extract": {
+                    "enabled": true
+                },
+                "objdump_analyze": {
+                    "enabled": true
+                },
+                "ghidra_analysis": {
+                    "enabled": true
+                },
+                "pwntools_exploit": {
+                    "enabled": true
+                }
+            }
+        },
+        "web_security": {
+            "enabled": true,
+            "tools": {
+                "one_gadget_search": {
+                    "enabled": true
+                },
+                "libc_database_lookup": {
+                    "enabled": true
+                },
+                "gdb_peda_debug": {
+                    "enabled": true
+                },
+                "angr_symbolic_execution": {
+                    "enabled": true
+                },
+                "ropper_gadget_search": {
+                    "enabled": true
+                },
+                "pwninit_setup": {
+                    "enabled": true
+                },
+                "feroxbuster_scan": {
+                    "enabled": true
+                },
+                "dotdotpwn_scan": {
+                    "enabled": true
+                },
+                "xsser_scan": {
+                    "enabled": true
+                },
+                "wfuzz_scan": {
+                    "enabled": true
+                },
+                "dirsearch_scan": {
+                    "enabled": true
+                },
+                "katana_crawl": {
+                    "enabled": true
+                },
+                "gau_discovery": {
+                    "enabled": true
+                },
+                "waybackurls_discovery": {
+                    "enabled": true
+                },
+                "arjun_parameter_discovery": {
+                    "enabled": true
+                },
+                "paramspider_mining": {
+                    "enabled": true
+                },
+                "x8_parameter_discovery": {
+                    "enabled": true
+                },
+                "jaeles_vulnerability_scan": {
+                    "enabled": true
+                },
+                "dalfox_xss_scan": {
+                    "enabled": true
+                },
+                "httpx_probe": {
+                    "enabled": true
+                },
+                "anew_data_processing": {
+                    "enabled": true
+                },
+                "qsreplace_parameter_replacement": {
+                    "enabled": true
+                },
+                "uro_url_filtering": {
+                    "enabled": true
+                },
+                "ai_generate_payload": {
+                    "enabled": true
+                },
+                "ai_test_payload": {
+                    "enabled": true
+                },
+                "ai_generate_attack_suite": {
+                    "enabled": true
+                }
+            }
+        },
+        "api_testing": {
+            "enabled": true,
+            "tools": {
+                "api_fuzzer": {
+                    "enabled": true
+                },
+                "graphql_scanner": {
+                    "enabled": true
+                },
+                "jwt_analyzer": {
+                    "enabled": true
+                },
+                "api_schema_analyzer": {
+                    "enabled": true
+                }
+            }
+        },
+        "ctf_tools": {
+            "enabled": true,
+            "tools": {
+                "volatility3": {
+                    "enabled": true
+                },
+                "foremost": {
+                    "enabled": true
+                },
+                "steghide": {
+                    "enabled": true
+                },
+                "exiftool": {
+                    "enabled": true
+                },
+                "hashpump": {
+                    "enabled": true
+                }
+            }
+        }
+    }
+}

@@ -11689,16 +11689,16 @@ def enum4linux_ng():
         # Add specific enumeration options
         enum_options = []
         if shares:
-            enum_options.append("S")
+            enum_options.append("-S")
         if users:
-            enum_options.append("U")
+            enum_options.append("-U")
         if groups:
-            enum_options.append("G")
+            enum_options.append("-G")
         if policy:
-            enum_options.append("P")
+            enum_options.append("-P")
 
         if enum_options:
-            command += f" -A {','.join(enum_options)}"
+            command += f" -A {' '.join(enum_options)}"
 
         if additional_args:
             command += f" {additional_args}"
