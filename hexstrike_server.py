@@ -4752,7 +4752,7 @@ class ParameterOptimizer:
             base_params.update({
                 "mode": "dir",
                 "threads": 20,
-                "wordlist": "/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt"
+                "wordlist": "./wordlists/dirbuster/directory-list-2.3-medium.txt"
             })
         elif tool == "sqlmap":
             base_params.update({
@@ -13151,7 +13151,7 @@ def httpx():
             logger.warning("🌐 httpx called without target parameter")
             return jsonify({"error": "Target parameter is required"}), 400
 
-        command = f"httpx -l {target} -t {threads}"
+        command = f"httpx -u {target} -t {threads}"
 
         if probe:
             command += " -probe"
