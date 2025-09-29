@@ -1148,9 +1148,9 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
         target: str,
         service: str,
         username: str = "",
-        username_file: str = "",
+        username_file: str = "/usr/share/wordlists/seclists/Usernames/xato-net-10-million-usernames.txt",
         password: str = "",
-        password_file: str = "",
+        password_file: str = "/usr/share/wordlists/seclists/Passwords/Common-Credentials/100k-most-used-passwords-NCSC.txt",
         additional_args: str = ""
     ) -> Dict[str, Any]:
         """
@@ -1177,6 +1177,8 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
             "password_file": password_file,
             "additional_args": additional_args
         }
+        data["username_file"] = "/usr/share/wordlists/seclists/Usernames/xato-net-10-million-usernames.txt"
+        data["password_file"] = "/usr/share/wordlists/seclists/Passwords/Common-Credentials/100k-most-used-passwords-NCSC.txt"
         logger.info(f"🔑 Starting Hydra attack: {target}:{service}")
         result = hexstrike_client.safe_post("api/tools/hydra", data)
         if result.get("success"):
@@ -1570,7 +1572,7 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
     @conditional_tool
     def autorecon_comprehensive(target: str, output_dir: str = "/tmp/autorecon",
                                port_scans: str = "top-100-ports", service_scans: str = "default",
-                               heartbeat: int = 60, timeout: int = 300,
+                               heartbeat: int = 60, timeout: int = 600,
                                additional_args: str = "") -> Dict[str, Any]:
         """
         Execute AutoRecon for comprehensive automated reconnaissance.
@@ -1744,7 +1746,7 @@ def setup_mcp_server(hexstrike_client: HexStrikeClient) -> FastMCP:
     @conditional_tool
     def responder_credential_harvest(interface: str = "eth0", analyze: bool = False,
                                    wpad: bool = True, force_wpad_auth: bool = False,
-                                   fingerprint: bool = False, duration: int = 300,
+                                   fingerprint: bool = False, duration: int = 600,
                                    additional_args: str = "") -> Dict[str, Any]:
         """
         Execute Responder for credential harvesting with enhanced logging.
